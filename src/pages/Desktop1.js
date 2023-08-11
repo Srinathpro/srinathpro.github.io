@@ -1,6 +1,5 @@
-import { FunctionComponent } from "react";
 import styles from "./Desktop1.module.css";
-const Desktop1: FunctionComponent = () => {
+const Desktop1 = () => {
   return (
     <div className={styles.desktop1}>
       <img className={styles.dpIcon} alt="" src="/dp@2x.png" />
