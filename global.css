@@ -2,3 +2,17 @@ body {
   margin: 0;
   line-height: normal;
 }
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-11xl: 30px;
+}
