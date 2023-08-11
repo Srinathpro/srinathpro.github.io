@@ -8,11 +8,8 @@ body {
   --font-inter: Inter;
 
   /* font sizes */
-  --font-size-5xl: 24px;
+  --font-size-base: 16px;
 
   /* Colors */
   --color-black: #000;
-
-  /* Gaps */
-  --gap-11xl: 30px;
 }
