@@ -111,7 +111,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.cta {
+.cta1 {
   cursor: pointer;
   border: 5px solid var(--color-aqua-100);
   padding: 14px 17px;
