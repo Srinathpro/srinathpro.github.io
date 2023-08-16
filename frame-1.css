@@ -1,0 +1,158 @@
+.my-logo-12 {
+  position: absolute;
+  height: 36.67%;
+  width: 12.9%;
+  top: 37.08%;
+  right: 78.27%;
+  bottom: 26.25%;
+  left: 8.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.portfolio-icon {
+  position: relative;
+  width: 47px;
+  height: 46px;
+  object-fit: cover;
+}
+.client-base1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 129px;
+  height: 29px;
+  flex-shrink: 0;
+}
+.client-base {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 43.5px;
+  left: 654px;
+  width: 207px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 31px;
+}
+.skills1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 59px;
+  height: 29px;
+  flex-shrink: 0;
+}
+.skills {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 43.5px;
+  left: 947px;
+  width: 136px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.ringer-volume-icon2 {
+  position: relative;
+  width: 48px;
+  height: 46px;
+  object-fit: cover;
+}
+.contact1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 92px;
+  height: 29px;
+  flex-shrink: 0;
+}
+.contact {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 43.5px;
+  left: 1169px;
+  width: 170px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.get-a-proposal {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.cta1 {
+  cursor: pointer;
+  border: 5px solid var(--color-aqua-100);
+  padding: 14px 17px;
+  background-color: transparent;
+  position: absolute;
+  height: 49.17%;
+  width: 11.91%;
+  top: 30.42%;
+  right: 2.09%;
+  bottom: 20.42%;
+  left: 86%;
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.mask-group-icon {
+  position: absolute;
+  top: 16.5px;
+  left: 28px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.header,
+.header-parent {
+  position: relative;
+  width: 1721px;
+  height: 120px;
+}
+.header-parent {
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 39.5px 87px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
