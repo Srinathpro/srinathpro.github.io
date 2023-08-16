@@ -7,190 +7,44 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     />
   </head>
   <body>
     <div class="desktop-1">
-      <button class="call-to-action">
-        <div class="lets-talk">Let’s Talk</div>
-      </button>
-      <img class="logo-icon1" alt="" src="./public/logo1.svg" />
+      <div class="contact-me-parent">
+        <div class="contact-me">
+          <img
+            class="ringer-volume-icon"
+            alt=""
+            src="./public/ringer-volume@2x.png"
+          />
 
-      <img class="desktop-1-child" alt="" src="./public/line-1.svg" />
-
-      <img class="desktop-1-item" alt="" src="./public/arrow-1.svg" />
-
-      <img class="desktop-1-inner" alt="" src="./public/arrow-2.svg" />
-
-      <img class="arrow-icon" alt="" src="./public/arrow-3.svg" />
-
-      <img class="desktop-1-child1" alt="" src="./public/arrow-4.svg" />
-
-      <img class="desktop-1-child2" alt="" src="./public/arrow-5.svg" />
-
-      <img class="desktop-1-child3" alt="" src="./public/arrow-6.svg" />
-
-      <img class="desktop-1-child4" alt="" src="./public/arrow-7.svg" />
-
-      <img class="desktop-1-child5" alt="" src="./public/arrow-8.svg" />
-
-      <img class="desktop-1-child6" alt="" src="./public/arrow-9.svg" />
-
-      <img class="desktop-1-child7" alt="" src="./public/arrow-10.svg" />
-
-      <img class="desktop-1-child8" alt="" src="./public/arrow-11.svg" />
-
-      <button class="menu2" id="menu"></button>
-      <header class="nav-bar">
-        <img class="logo-icon2" alt="" src="./public/logo2.svg" />
-
-        <div class="menu3">
-          <button class="contact2">
-            <img
-              class="ringer-volume-icon1"
-              alt=""
-              src="./public/ringer-volume1@2x.png"
-            />
-
-            <div class="contact3">Contact</div>
-          </button>
-          <button class="skills1">
-            <img
-              class="services-icon1"
-              alt=""
-              src="./public/services1@2x.png"
-            />
-
-            <button class="web-designing1">Web Designing</button>
-            <button class="graphic-designing1">Graphic Designing</button>
-            <button class="social-media-marketing1">
-              Social Media Marketing
-            </button>
-            <button class="d-modeling1">3D Modeling</button>
-            <div class="portfolio-expertise1">Portfolio | Expertise</div>
-          </button>
-          <button class="about1">
-            <img
-              class="ringer-volume-icon1"
-              alt=""
-              src="./public/administrator-male1@2x.png"
-            />
-
-            <div class="contact3">About Me</div>
-          </button>
+          <div class="contact-me1">Contact me</div>
         </div>
-      </header>
-    </div>
+        <div class="services">
+          <img class="services-icon" alt="" src="./public/services@2x.png" />
 
-    <div id="drawer" class="popup-overlay" style="display: none">
-      <div class="drawer" data-animate-on-scroll>
+          <div class="expertise-portfolio">Expertise | Portfolio</div>
+          <div class="d-modeling">3d Modeling</div>
+          <div class="web-designing">Web Designing</div>
+          <div class="graphic-designing">Graphic Designing</div>
+          <div class="social-media-marketing">Social Media Marketing</div>
+          <div class="linkedin-growth-scaling">LinkedIn Growth Scaling</div>
+        </div>
+        <div class="about-me">
+          <img
+            class="ringer-volume-icon"
+            alt=""
+            src="./public/businessman@2x.png"
+          />
+
+          <div class="contact-me1">About me</div>
+        </div>
         <img class="logo-icon" alt="" src="./public/logo.svg" />
-
-        <div class="menu">
-          <button class="contact">
-            <img
-              class="ringer-volume-icon"
-              alt=""
-              src="./public/ringer-volume@2x.png"
-            />
-
-            <div class="about-me">Contact</div>
-          </button>
-          <button class="skills">
-            <img class="services-icon" alt="" src="./public/services@2x.png" />
-
-            <button class="web-designing">Web Designing</button>
-            <button class="graphic-designing">Graphic Designing</button>
-            <button class="social-media-marketing">
-              Social Media Marketing
-            </button>
-            <button class="d-modeling">3D Modeling</button>
-            <div class="portfolio-expertise">Portfolio | Expertise</div>
-          </button>
-          <button class="about">
-            <img
-              class="ringer-volume-icon"
-              alt=""
-              src="./public/administrator-male@2x.png"
-            />
-
-            <div class="about-me">About Me</div>
-          </button>
-          <button class="menu1" id="drawermenu"></button>
-        </div>
       </div>
+      <div class="desktop-1-child"></div>
+      <div class="lets-talk">Let’s Talk</div>
     </div>
-
-    <script>
-      var drawermenu = document.getElementById("drawermenu");
-      if (drawermenu) {
-        drawermenu.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-
-      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.15,
-        }
-      );
-
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
-      }
-
-      var menu = document.getElementById("menu");
-      if (menu) {
-        menu.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("drawer");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            drawerOverlayStyle.alignItems = "flex-end";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-    </script>
   </body>
 </html>
