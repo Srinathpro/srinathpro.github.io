@@ -1,94 +1,89 @@
-.ringer-volume-icon {
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.menu {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 23px;
-  height: 23px;
-  object-fit: cover;
+  top: 10px;
+  width: 31px;
+  height: 31px;
+  background-image: url(./public/menu@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: none;
 }
-.contact-me1 {
+.my-logo-11 {
   position: absolute;
-  top: 3px;
-  left: 29px;
-}
-.contact-me,
-.services-icon {
-  position: absolute;
-  top: 459px;
-  left: 43px;
-  width: 106px;
-  height: 23px;
-}
-.services-icon {
-  top: 0;
-  left: 0;
-  width: 24px;
-  object-fit: cover;
-}
-.expertise-portfolio {
-  position: absolute;
-  top: 3px;
-  left: 29px;
-  font-size: var(--font-size-sm);
-}
-.d-modeling,
-.web-designing {
-  position: absolute;
-  top: 33px;
-  left: 39px;
-}
-.web-designing {
-  top: 64px;
-}
-.graphic-designing,
-.social-media-marketing {
-  position: absolute;
-  top: 95px;
-  left: 39px;
-}
-.social-media-marketing {
-  top: 126px;
-}
-.linkedin-growth-scaling,
-.services {
-  position: absolute;
-  top: 157px;
-  left: 39px;
-}
-.services {
-  top: 261px;
-  left: 43px;
-  width: 176px;
-  height: 172px;
-  font-size: var(--font-size-xs);
-}
-.about-me,
-.logo-icon {
-  position: absolute;
-  top: 209px;
-  left: 43px;
-  width: 93px;
-  height: 23px;
-}
-.logo-icon {
-  top: 34px;
-  width: 139px;
-  height: 146px;
-}
-.contact-me-parent {
-  position: absolute;
-  top: 48px;
-  left: 82px;
-  border-radius: 30px;
-  background-color: var(--color-white);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  width: 270px;
-  height: 615px;
+  top: 13px;
+  left: 50px;
+  width: 90px;
+  height: 19px;
   overflow: hidden;
 }
-.cta-child {
+.my-logo-2,
+.srinath-1-icon1 {
+  position: absolute;
   top: 0;
   left: 0;
+  height: 44px;
+}
+.srinath-1-icon1 {
+  border-radius: var(--br-62xl);
+  width: 44px;
+  object-fit: cover;
+}
+.my-logo-2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 140px;
+  display: none;
+}
+.mobile-header {
+  position: absolute;
+  top: 25px;
+  right: 1415px;
+  width: 0;
+  height: 0;
+}
+.ufo {
+  position: absolute;
+  top: 373.58px;
+  left: 765px;
+  width: 245px;
+  height: 182.85px;
+}
+.astronaut-and-dog-in-space-sui,
+.satellite-icon {
+  position: absolute;
+  top: 818px;
+  left: 661px;
+  width: 454px;
+  height: 456px;
+  object-fit: cover;
+}
+.astronaut-and-dog-in-space-sui {
+  top: 190px;
+  left: 611px;
+  width: 491px;
+  height: 354px;
+}
+.cta-child {
+  position: absolute;
+  top: 0;
+  right: 0;
   border-radius: 13px;
   background-color: rgba(0, 255, 255, 0.1);
   border: 2px solid var(--color-aqua-100);
@@ -96,30 +91,393 @@
   width: 98px;
   height: 33px;
 }
-.cta,
-.cta-child,
 .lets-talk {
   position: absolute;
-}
-.lets-talk {
   top: 8px;
-  left: 18px;
+  right: 17px;
+  font-size: var(--font-size-sm);
   font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
 }
 .cta {
-  top: 50px;
-  left: 1291px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: fixed;
+  top: 48px;
+  right: 82px;
   width: 98px;
   height: 33px;
 }
-.desktop-1 {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 750px;
-  overflow: hidden;
+.ringer-volume-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  object-fit: cover;
+}
+.contact-me3 {
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
   text-align: left;
+}
+.contact-me2,
+.services-icon1 {
+  position: absolute;
+  left: 0;
+  height: 23px;
+}
+.contact-me2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 439px;
+  width: 118px;
+}
+.services-icon1 {
+  top: 0;
+  width: 24px;
+  object-fit: cover;
+}
+.expertise-portfolio1 {
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  font-weight: 500;
+}
+.d-modeling1,
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1,
+.web-designing1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: var(--font-size-sm);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1,
+.web-designing1 {
+  top: 31px;
+}
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1 {
+  top: 62px;
+}
+.linkedin-growth-scaling1,
+.social-media-marketing1 {
+  top: 93px;
+}
+.linkedin-growth-scaling1 {
+  top: 124px;
+}
+.sub-menu1 {
+  position: absolute;
+  top: 40px;
+  left: 38px;
+  width: 160px;
+  height: 141px;
+}
+.about-me2,
+.services1 {
+  position: absolute;
+  top: 233px;
+  left: 0;
+  width: 198px;
+  height: 181px;
+}
+.about-me2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 178px;
+  width: 104px;
+  height: 23px;
+}
+.srinath-1-icon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-62xl);
+  width: 103px;
+  height: 103px;
+  object-fit: cover;
+}
+.logo1,
+.my-logo-12 {
+  position: absolute;
+  left: 0;
+  width: 139px;
+}
+.my-logo-12 {
+  top: 117px;
+  height: 29px;
+  overflow: hidden;
+}
+.logo1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  height: 146px;
+}
+.nav-bar1 {
+  position: absolute;
+  top: 34px;
+  left: 43px;
+  width: 198px;
+  height: 462px;
+}
+.home-page,
+.nav-section1 {
+  background-color: var(--color-white);
+}
+.nav-section1 {
+  position: fixed;
+  top: 48px;
+  left: 82px;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  width: 270px;
+  height: 615px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
   color: var(--color-black);
   font-family: var(--font-inter);
+}
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 1923px;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .menu,
+  .my-logo-2 {
+    display: flex;
+  }
+  .astronaut-and-dog-in-space-sui,
+  .cta,
+  .nav-section1,
+  .satellite-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .menu {
+    display: flex;
+  }
+  .nav-section1 {
+    display: none;
+  }
+}
+.menu-icon,
+.ringer-volume-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.menu-icon {
+  top: 35px;
+  right: 25px;
+  width: 31px;
+  height: 31px;
+}
+.ringer-volume-icon {
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+}
+.contact-me1 {
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.contact-me,
+.services-icon {
+  position: absolute;
+  left: 0;
+  height: 23px;
+}
+.contact-me {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 439px;
+  width: 118px;
+}
+.services-icon {
+  top: 0;
+  width: 24px;
+  object-fit: cover;
+}
+.expertise-portfolio {
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  font-weight: 500;
+}
+.d-modeling,
+.graphic-designing,
+.linkedin-growth-scaling,
+.social-media-marketing,
+.web-designing {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.graphic-designing,
+.linkedin-growth-scaling,
+.social-media-marketing,
+.web-designing {
+  top: 31px;
+}
+.graphic-designing,
+.linkedin-growth-scaling,
+.social-media-marketing {
+  top: 62px;
+}
+.linkedin-growth-scaling,
+.social-media-marketing {
+  top: 93px;
+}
+.linkedin-growth-scaling {
+  top: 124px;
+}
+.sub-menu {
+  position: absolute;
+  top: 40px;
+  left: 38px;
+  width: 160px;
+  height: 141px;
+}
+.about-me,
+.services {
+  position: absolute;
+  top: 233px;
+  left: 0;
+  width: 198px;
+  height: 181px;
+}
+.about-me {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 178px;
+  width: 104px;
+  height: 23px;
+}
+.srinath-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-62xl);
+  width: 103px;
+  height: 103px;
+  object-fit: cover;
+}
+.my-logo-1 {
+  top: 117px;
+  left: 0;
+  width: 139px;
+  height: 29px;
+  overflow: hidden;
+}
+.logo,
+.my-logo-1,
+.nav-bar {
+  position: absolute;
+}
+.logo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 139px;
+  height: 146px;
+}
+.nav-bar {
+  top: 34px;
+  left: 43px;
+  width: 198px;
+  height: 462px;
+}
+.drawer,
+.nav-section {
+  background-color: var(--color-white);
+}
+.nav-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 615px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.drawer {
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  width: 360px;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  max-width: 90%;
+}
+.drawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
+@media screen and (max-width: 960px) {
+  .nav-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav-section {
+    display: none;
+  }
 }

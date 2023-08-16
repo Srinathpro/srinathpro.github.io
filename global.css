@@ -3,13 +3,20 @@ body {
   line-height: normal;
 }
 
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
 :root {
   /* fonts */
   --font-inter: Inter;
 
   /* font sizes */
+  --font-size-base: 16px;
   --font-size-sm: 14px;
-  --font-size-xs: 12px;
   --font-size-5xl: 24px;
 
   /* Colors */
@@ -19,4 +26,7 @@ body {
 
   /* Gaps */
   --gap-11xl: 30px;
+
+  /* border radiuses */
+  --br-62xl: 81px;
 }
