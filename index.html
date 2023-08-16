@@ -4,37 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./drawer.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     />
   </head>
   <body>
-    <div class="home-page">
-      <div class="ufo"></div>
-      <img
-        class="astronaut-and-dog-in-space-sui"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
+    <div class="drawer" data-animate-on-scroll>
+      <img class="menu-icon" alt="" src="./public/menu@2x.png" />
 
-      <img
-        class="astronaut-and-dog-in-space-sui1"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
-
-      <img
-        class="astronaut-and-dog-in-space-sui2"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
-
-      <button class="cta">
-        <div class="cta-child"></div>
-        <div class="lets-talk">Let’s Talk</div>
-      </button>
       <header class="nav-section">
         <div class="nav-bar">
           <button class="contact-me">
@@ -78,72 +57,10 @@
               src="./public/srinath-1@2x.png"
             />
 
-            <img class="my-logo-1" alt="" src="./public/my-logo-12.svg" />
+            <img class="my-logo-1" alt="" src="./public/my-logo-1.svg" />
           </button>
         </div>
       </header>
-      <button class="menu" id="menu"></button>
-      <button class="mob-logo">
-        <img class="logo-icon" alt="" src="./public/logo.svg" />
-      </button>
-    </div>
-
-    <div id="drawer" class="popup-overlay" style="display: none">
-      <div class="drawer" data-animate-on-scroll>
-        <img class="menu-icon" alt="" src="./public/menu@2x.png" />
-
-        <header class="nav-section1">
-          <div class="nav-bar1">
-            <button class="contact-me2">
-              <img
-                class="ringer-volume-icon1"
-                alt=""
-                src="./public/ringer-volume@2x.png"
-              />
-
-              <div class="contact-me3">Contact me</div>
-            </button>
-            <div class="services1">
-              <img
-                class="services-icon1"
-                alt=""
-                src="./public/services@2x.png"
-              />
-
-              <div class="expertise-portfolio1">Expertise | Portfolio</div>
-              <div class="sub-menu1">
-                <button class="d-modeling1">3d Modeling</button>
-                <button class="web-designing1">Web Designing</button>
-                <button class="graphic-designing1">Graphic Designing</button>
-                <button class="social-media-marketing1">
-                  Social Media Marketing
-                </button>
-                <button class="linkedin-growth-scaling1">
-                  LinkedIn Growth Scaling
-                </button>
-              </div>
-            </div>
-            <button class="about-me2">
-              <img
-                class="ringer-volume-icon1"
-                alt=""
-                src="./public/businessman@2x.png"
-              />
-
-              <div class="contact-me3">About me</div>
-            </button>
-            <button class="logo1">
-              <img
-                class="srinath-1-icon1"
-                alt=""
-                src="./public/srinath-1@2x.png"
-              />
-
-              <img class="my-logo-11" alt="" src="./public/my-logo-1.svg" />
-            </button>
-          </div>
-        </header>
-      </div>
     </div>
 
     <script>
@@ -163,39 +80,11 @@
         }
       );
 
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
-
-      var menu = document.getElementById("menu");
-      if (menu) {
-        menu.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("drawer");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            drawerOverlayStyle.alignItems = "flex-end";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-
+    </script>
+    </script>
   </body>
 </html>
