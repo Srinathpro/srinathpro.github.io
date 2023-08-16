@@ -9,7 +9,7 @@
   }
 }
 .menu-icon,
-.ringer-volume-icon {
+.ringer-volume-icon1 {
   position: absolute;
   object-fit: cover;
 }
@@ -19,13 +19,13 @@
   width: 31px;
   height: 31px;
 }
-.ringer-volume-icon {
+.ringer-volume-icon1 {
   top: 0;
   left: 0;
   width: 23px;
   height: 23px;
 }
-.contact-me1 {
+.contact-me3 {
   position: absolute;
   top: 2px;
   left: 29px;
@@ -35,13 +35,13 @@
   color: var(--color-black);
   text-align: left;
 }
-.contact-me,
-.services-icon {
+.contact-me2,
+.services-icon1 {
   position: absolute;
   left: 0;
   height: 23px;
 }
-.contact-me {
+.contact-me2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -49,22 +49,22 @@
   top: 439px;
   width: 118px;
 }
-.services-icon {
+.services-icon1 {
   top: 0;
   width: 24px;
   object-fit: cover;
 }
-.expertise-portfolio {
+.expertise-portfolio1 {
   position: absolute;
   top: 2px;
   left: 29px;
   font-weight: 500;
 }
-.d-modeling,
-.graphic-designing,
-.linkedin-growth-scaling,
-.social-media-marketing,
-.web-designing {
+.d-modeling1,
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1,
+.web-designing1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -78,40 +78,40 @@
   text-align: left;
   display: inline-block;
 }
-.graphic-designing,
-.linkedin-growth-scaling,
-.social-media-marketing,
-.web-designing {
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1,
+.web-designing1 {
   top: 31px;
 }
-.graphic-designing,
-.linkedin-growth-scaling,
-.social-media-marketing {
+.graphic-designing1,
+.linkedin-growth-scaling1,
+.social-media-marketing1 {
   top: 62px;
 }
-.linkedin-growth-scaling,
-.social-media-marketing {
+.linkedin-growth-scaling1,
+.social-media-marketing1 {
   top: 93px;
 }
-.linkedin-growth-scaling {
+.linkedin-growth-scaling1 {
   top: 124px;
 }
-.sub-menu {
+.sub-menu1 {
   position: absolute;
   top: 40px;
   left: 38px;
   width: 160px;
   height: 141px;
 }
-.about-me,
-.services {
+.about-me2,
+.services1 {
   position: absolute;
   top: 233px;
   left: 0;
   width: 198px;
   height: 181px;
 }
-.about-me {
+.about-me2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -120,7 +120,7 @@
   width: 104px;
   height: 23px;
 }
-.srinath-1-icon {
+.srinath-1-icon1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -129,39 +129,37 @@
   height: 103px;
   object-fit: cover;
 }
-.my-logo-1 {
-  top: 117px;
+.logo1,
+.my-logo-11 {
+  position: absolute;
   left: 0;
   width: 139px;
+}
+.my-logo-11 {
+  top: 117px;
   height: 29px;
   overflow: hidden;
 }
-.logo,
-.my-logo-1,
-.nav-bar {
-  position: absolute;
-}
-.logo {
+.logo1 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   top: 0;
-  left: 0;
-  width: 139px;
   height: 146px;
 }
-.nav-bar {
+.nav-bar1 {
+  position: absolute;
   top: 34px;
   left: 43px;
   width: 198px;
   height: 462px;
 }
 .drawer,
-.nav-section {
+.nav-section1 {
   background-color: var(--color-white);
 }
-.nav-section {
+.nav-section1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -185,13 +183,18 @@
 .drawer.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
-@media screen and (max-width: 960px) {
-  .nav-section {
+@media screen and (max-width: 1200px) {
+  .nav-section1 {
     display: none;
   }
 }
+@media screen and (max-width: 960px) {
+  .nav-section1 {
+    display: flex;
+  }
+}
 @media screen and (max-width: 420px) {
-  .nav-section {
-    display: none;
+  .nav-section1 {
+    display: flex;
   }
 }
