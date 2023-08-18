@@ -16,23 +16,24 @@
   </head>
   <body>
     <div class="home-page">
-      <div class="im-srinath-container">
-        <p class="im-srinath-i-love-to-work">
-          <span class="im-srinath">I’m Srinath & I </span>
+      <div class="hi-there-welcome-to-my-virtu-parent">
+        <div class="hi-there-container">
+          <span>Hi there ! Welcome to my </span>
+          <span class="virtual-workspace">Virtual WorkSpace</span>
+        </div>
+        <div class="im-srinath-container">
+          <span>I’m Srinath & I </span>
           <span class="love">Love</span>
-          <span> to work</span>
-        </p>
-        <p class="im-srinath-i-love-to-work">in Designing and Scaling,</p>
-        <p class="im-srinath-i-love-to-work">with strategical approach.</p>
+          <span>
+            to work in Designing, and Scaling Online with strategic
+            approach.</span
+          >
+        </div>
+        <button class="cta">
+          <div class="cta-child"></div>
+          <div class="more-about-me">More About me</div>
+        </button>
       </div>
-      <div class="hi-there-container">
-        <span>Hi there ! Welcome to my </span>
-        <span class="virtual-space">Virtual Space</span>
-      </div>
-      <button class="cta">
-        <div class="cta-child"></div>
-        <div class="more-about-me">More About me</div>
-      </button>
       <button class="cta1">
         <div class="cta-item"></div>
         <div class="lets-talk">Let’s Talk</div>
@@ -162,11 +163,11 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var menu = document.getElementById("menu");
       if (menu) {
         menu.addEventListener("click", function () {
@@ -181,7 +182,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -195,6 +196,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-    </script>
+      </script>
   </body>
 </html>
