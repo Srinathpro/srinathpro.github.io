@@ -13,6 +13,7 @@ body {
 :root {
   /* fonts */
   --font-inter: Inter;
+  --font-baloo-2: "Baloo 2";
 
   /* font sizes */
   --font-size-base: 16px;
@@ -23,10 +24,11 @@ body {
   --color-white: #fff;
   --color-black: #000;
   --color-aqua-100: #00ffff;
+  --color-aqua-200: rgba(0, 255, 255, 0.1);
 
   /* Gaps */
   --gap-11xl: 30px;
 
   /* border radiuses */
-  --br-62xl: 81px;
+  --br-455xl: 474px;
 }

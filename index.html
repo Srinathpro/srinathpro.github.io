@@ -9,30 +9,32 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@400;600&display=swap"
+    />
   </head>
   <body>
     <div class="home-page">
-      <div class="ufo"></div>
-      <img
-        class="astronaut-and-dog-in-space-sui"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
-
-      <img
-        class="astronaut-and-dog-in-space-sui1"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
-
-      <img
-        class="astronaut-and-dog-in-space-sui2"
-        alt=""
-        src="./public/astronaut-and-dog-in-space-suit-floating@2x.png"
-      />
-
-      <button class="cta" data-animate-on-scroll>
+      <div class="im-srinath-container">
+        <p class="im-srinath-i-love-to-work">
+          <span class="im-srinath">I’m Srinath & I </span>
+          <span class="love">Love</span>
+          <span> to work</span>
+        </p>
+        <p class="im-srinath-i-love-to-work">in Designing and Scaling,</p>
+        <p class="im-srinath-i-love-to-work">with strategical approach.</p>
+      </div>
+      <div class="hi-there-container">
+        <span>Hi there ! Welcome to my </span>
+        <span class="virtual-space">Virtual Space</span>
+      </div>
+      <button class="cta">
         <div class="cta-child"></div>
+        <div class="more-about-me">More About me</div>
+      </button>
+      <button class="cta1">
+        <div class="cta-item"></div>
         <div class="lets-talk">Let’s Talk</div>
       </button>
       <header class="nav-section1">
@@ -51,12 +53,9 @@
 
             <div class="expertise-portfolio1">Expertise | Portfolio</div>
             <div class="sub-menu1">
-              <button class="d-modeling1">3d Modeling</button>
+              <button class="d-modeling1">3D Modeling</button>
               <button class="web-designing1">Web Designing</button>
               <button class="graphic-designing1">Graphic Designing</button>
-              <button class="social-media-marketing1">
-                Social Media Marketing
-              </button>
               <button class="linkedin-growth-scaling1">
                 LinkedIn Growth Scaling
               </button>
@@ -71,15 +70,17 @@
 
             <div class="contact-me3">About me</div>
           </button>
-          <button class="logo1">
-            <img
-              class="srinath-1-icon1"
-              alt=""
-              src="./public/srinath-1@2x.png"
-            />
+          <div class="logo2">
+            <img class="srinath-icon1" alt="" src="./public/srinath@2x.png" />
 
-            <img class="my-logo-11" alt="" src="./public/my-logo-11.svg" />
-          </button>
+            <button class="logo3">
+              <img class="my-logo-11" alt="" src="./public/my-logo-11.svg" />
+            </button>
+          </div>
+          <div class="project1">
+            <div class="check-project-status1">Check Project Status</div>
+            <img class="tasks-icon1" alt="" src="./public/tasks@2x.png" />
+          </div>
         </div>
       </header>
       <button class="menu" id="menu"></button>
@@ -112,12 +113,9 @@
 
               <div class="expertise-portfolio">Expertise | Portfolio</div>
               <div class="sub-menu">
-                <button class="d-modeling">3d Modeling</button>
+                <button class="d-modeling">3D Modeling</button>
                 <button class="web-designing">Web Designing</button>
                 <button class="graphic-designing">Graphic Designing</button>
-                <button class="social-media-marketing">
-                  Social Media Marketing
-                </button>
                 <button class="linkedin-growth-scaling">
                   LinkedIn Growth Scaling
                 </button>
@@ -132,49 +130,23 @@
 
               <div class="contact-me1">About me</div>
             </button>
-            <button class="logo">
-              <img
-                class="srinath-1-icon"
-                alt=""
-                src="./public/srinath-1@2x.png"
-              />
+            <div class="logo">
+              <img class="srinath-icon" alt="" src="./public/srinath@2x.png" />
 
-              <img class="my-logo-1" alt="" src="./public/my-logo-1.svg" />
-            </button>
+              <button class="logo1">
+                <img class="my-logo-1" alt="" src="./public/my-logo-1.svg" />
+              </button>
+            </div>
+            <div class="project">
+              <div class="check-project-status">Check Project Status</div>
+              <img class="tasks-icon" alt="" src="./public/tasks@2x.png" />
+            </div>
           </div>
         </header>
       </div>
     </div>
 
     <script>
-      var menu = document.getElementById("menu");
-      if (menu) {
-        menu.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("drawer");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            drawerOverlayStyle.alignItems = "flex-end";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-      
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -190,10 +162,39 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+
+      var menu = document.getElementById("menu");
+      if (menu) {
+        menu.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("drawer");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "flex-end";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+    </script>
   </body>
 </html>

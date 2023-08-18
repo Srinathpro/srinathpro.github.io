@@ -47,7 +47,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 439px;
+  top: 486px;
   width: 118px;
 }
 .services-icon {
@@ -64,7 +64,6 @@
 .d-modeling,
 .graphic-designing,
 .linkedin-growth-scaling,
-.social-media-marketing,
 .web-designing {
   cursor: pointer;
   border: 0;
@@ -81,82 +80,101 @@
 }
 .graphic-designing,
 .linkedin-growth-scaling,
-.social-media-marketing,
 .web-designing {
   top: 31px;
 }
 .graphic-designing,
-.linkedin-growth-scaling,
-.social-media-marketing {
+.linkedin-growth-scaling {
   top: 62px;
 }
-.linkedin-growth-scaling,
-.social-media-marketing {
-  top: 93px;
-}
 .linkedin-growth-scaling {
-  top: 124px;
+  top: 93px;
 }
 .sub-menu {
   position: absolute;
   top: 40px;
   left: 38px;
   width: 160px;
-  height: 141px;
+  height: 110px;
 }
 .about-me,
 .services {
   position: absolute;
-  top: 233px;
+  top: 244px;
   left: 0;
   width: 198px;
-  height: 181px;
+  height: 150px;
 }
 .about-me {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 178px;
+  top: 187px;
   width: 104px;
   height: 23px;
 }
-.srinath-1-icon {
+.srinath-icon {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-62xl);
+  border-radius: var(--br-455xl);
   width: 103px;
   height: 103px;
   object-fit: cover;
 }
 .my-logo-1 {
-  top: 117px;
-  left: 0;
-  width: 139px;
+  top: 0;
   height: 29px;
   overflow: hidden;
 }
 .logo,
-.my-logo-1,
-.nav-bar {
+.logo1,
+.my-logo-1 {
   position: absolute;
+  left: 0;
+  width: 139px;
 }
-.logo {
+.logo1 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
+  top: 124px;
+  height: 29px;
+}
+.logo {
   top: 0;
+  height: 153px;
+}
+.check-project-status {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-weight: 500;
+}
+.nav-bar,
+.project,
+.tasks-icon {
+  position: absolute;
   left: 0;
-  width: 139px;
-  height: 146px;
+  height: 24px;
+}
+.tasks-icon {
+  top: 0;
+  width: 24px;
+  object-fit: cover;
+}
+.nav-bar,
+.project {
+  top: 428px;
+  width: 191px;
 }
 .nav-bar {
   top: 34px;
   left: 29px;
   width: 198px;
-  height: 462px;
+  height: 509px;
 }
 .drawer,
 .nav-section {
@@ -167,7 +185,7 @@
   top: 0;
   left: 0;
   width: 270px;
-  height: 839px;
+  height: 725px;
   overflow-y: auto;
   text-align: left;
   font-size: var(--font-size-base);

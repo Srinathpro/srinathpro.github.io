@@ -1,26 +1,3 @@
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    transform-origin: center center;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
 @keyframes slide-in-right {
   0% {
     transform: translateX(200px);
@@ -31,68 +8,99 @@
     opacity: 1;
   }
 }
-.ufo {
+.im-srinath,
+.love {
+  font-family: var(--font-baloo-2);
+}
+.im-srinath {
+  color: var(--color-black);
+}
+.love {
+  font-weight: 600;
+  color: #ff6df9;
+}
+.im-srinath-i-love-to-work {
+  margin: 0;
+}
+.im-srinath-container {
   position: absolute;
-  top: 373.58px;
-  left: 765px;
-  width: 245px;
-  height: 182.85px;
+  top: calc(50% - 704.5px);
+  left: 428px;
 }
-.astronaut-and-dog-in-space-sui,
-.astronaut-and-dog-in-space-sui1,
-.astronaut-and-dog-in-space-sui2 {
+.virtual-space {
+  font-weight: 600;
+}
+.hi-there-container {
   position: absolute;
-  width: 100;
-  top: calc(50% - 777.5px);
-  right: 24.51%;
-  left: 41.39%;
-  max-width: 100%;
-  overflow: hidden;
-  height: 354px;
-  object-fit: cover;
-}
-.astronaut-and-dog-in-space-sui1,
-.astronaut-and-dog-in-space-sui2 {
-  top: calc(50% - 176.5px);
-}
-.astronaut-and-dog-in-space-sui2 {
-  top: calc(50% + 424.5px);
+  top: calc(50% - 755.5px);
+  left: 428px;
+  font-size: 30px;
 }
 .cta-child {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: calc(50% - 20px);
+  left: 0;
   border-radius: 13px;
-  background-color: rgba(0, 255, 255, 0.1);
+  background-color: var(--color-aqua-200);
   border: 2px solid var(--color-aqua-100);
   box-sizing: border-box;
-  width: 98px;
-  height: 33px;
+  width: 175px;
+  height: 40px;
 }
-.lets-talk {
-  position: absolute;
-  top: 8px;
-  right: 17px;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
+.more-about-me {
+  top: calc(50% - 10px);
+  left: 29px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
   font-family: var(--font-inter);
   color: var(--color-black);
   text-align: left;
+}
+.cta,
+.cta-item,
+.more-about-me {
+  position: absolute;
 }
 .cta {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  position: fixed;
-  top: 48px;
-  right: 82px;
-  width: 98px;
-  height: 33px;
-  opacity: 1;
+  top: calc(50% - 489.5px);
+  left: 426px;
+  width: 175px;
+  height: 40px;
 }
-.cta.animate {
-  animation: 1s ease 1s infinite normal forwards pulsate;
+.cta-item {
+  top: 0;
+  right: 0;
+  border-radius: 17px;
+  background-color: var(--color-aqua-200);
+  border: 2px solid var(--color-aqua-100);
+  box-sizing: border-box;
+  width: 137px;
+  height: 46px;
+}
+.lets-talk {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.cta1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: fixed;
+  top: 44px;
+  right: 55px;
+  width: 137px;
+  height: 46px;
 }
 .ringer-volume-icon1 {
   position: absolute;
@@ -123,7 +131,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 439px;
+  top: 486px;
   width: 118px;
 }
 .services-icon1 {
@@ -140,7 +148,6 @@
 .d-modeling1,
 .graphic-designing1,
 .linkedin-growth-scaling1,
-.social-media-marketing1,
 .web-designing1 {
   cursor: pointer;
   border: 0;
@@ -157,80 +164,101 @@
 }
 .graphic-designing1,
 .linkedin-growth-scaling1,
-.social-media-marketing1,
 .web-designing1 {
   top: 31px;
 }
 .graphic-designing1,
-.linkedin-growth-scaling1,
-.social-media-marketing1 {
+.linkedin-growth-scaling1 {
   top: 62px;
 }
-.linkedin-growth-scaling1,
-.social-media-marketing1 {
-  top: 93px;
-}
 .linkedin-growth-scaling1 {
-  top: 124px;
+  top: 93px;
 }
 .sub-menu1 {
   position: absolute;
   top: 40px;
   left: 38px;
   width: 160px;
-  height: 141px;
+  height: 110px;
 }
 .about-me2,
 .services1 {
   position: absolute;
-  top: 233px;
+  top: 244px;
   left: 0;
   width: 198px;
-  height: 181px;
+  height: 150px;
 }
 .about-me2 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 178px;
+  top: 187px;
   width: 104px;
   height: 23px;
 }
-.srinath-1-icon1 {
+.srinath-icon1 {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-62xl);
+  border-radius: var(--br-455xl);
   width: 103px;
   height: 103px;
   object-fit: cover;
 }
-.logo1,
+.my-logo-11 {
+  top: 0;
+  height: 29px;
+  overflow: hidden;
+}
+.logo2,
+.logo3,
 .my-logo-11 {
   position: absolute;
   left: 0;
   width: 139px;
 }
-.my-logo-11 {
-  top: 117px;
-  height: 29px;
-  overflow: hidden;
-}
-.logo1 {
+.logo3 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
+  top: 124px;
+  height: 29px;
+}
+.logo2 {
   top: 0;
-  height: 146px;
+  height: 153px;
+}
+.check-project-status1 {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-weight: 500;
+}
+.nav-bar1,
+.project1,
+.tasks-icon1 {
+  position: absolute;
+  left: 0;
+  height: 24px;
+}
+.tasks-icon1 {
+  top: 0;
+  width: 24px;
+  object-fit: cover;
+}
+.nav-bar1,
+.project1 {
+  top: 428px;
+  width: 191px;
 }
 .nav-bar1 {
-  position: absolute;
   top: 34px;
   left: 29px;
   width: 198px;
-  height: 462px;
+  height: 509px;
 }
 .nav-section1 {
   position: fixed;
@@ -240,7 +268,7 @@
   background-color: var(--color-white);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   width: 270px;
-  height: 839px;
+  height: 725px;
   overflow-y: auto;
   text-align: left;
   font-size: var(--font-size-base);
@@ -287,8 +315,15 @@
   width: 100%;
   height: 1923px;
   overflow: hidden;
+  text-align: left;
+  font-size: 40px;
+  color: var(--color-black);
+  font-family: var(--font-baloo-2);
 }
 @media screen and (max-width: 1200px) {
+  .cta {
+    display: flex;
+  }
   .logo-icon,
   .menu,
   .mob-logo {
@@ -296,10 +331,10 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .astronaut-and-dog-in-space-sui,
-  .astronaut-and-dog-in-space-sui1,
-  .astronaut-and-dog-in-space-sui2,
-  .cta,
+  .cta {
+    display: flex;
+  }
+  .cta1,
   .nav-section1 {
     display: none;
   }
@@ -310,6 +345,9 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .cta {
+    display: flex;
+  }
   .nav-section1 {
     display: none;
   }
@@ -357,7 +395,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 439px;
+  top: 486px;
   width: 118px;
 }
 .services-icon {
@@ -374,7 +412,6 @@
 .d-modeling,
 .graphic-designing,
 .linkedin-growth-scaling,
-.social-media-marketing,
 .web-designing {
   cursor: pointer;
   border: 0;
@@ -391,82 +428,101 @@
 }
 .graphic-designing,
 .linkedin-growth-scaling,
-.social-media-marketing,
 .web-designing {
   top: 31px;
 }
 .graphic-designing,
-.linkedin-growth-scaling,
-.social-media-marketing {
+.linkedin-growth-scaling {
   top: 62px;
 }
-.linkedin-growth-scaling,
-.social-media-marketing {
-  top: 93px;
-}
 .linkedin-growth-scaling {
-  top: 124px;
+  top: 93px;
 }
 .sub-menu {
   position: absolute;
   top: 40px;
   left: 38px;
   width: 160px;
-  height: 141px;
+  height: 110px;
 }
 .about-me,
 .services {
   position: absolute;
-  top: 233px;
+  top: 244px;
   left: 0;
   width: 198px;
-  height: 181px;
+  height: 150px;
 }
 .about-me {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 178px;
+  top: 187px;
   width: 104px;
   height: 23px;
 }
-.srinath-1-icon {
+.srinath-icon {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-62xl);
+  border-radius: var(--br-455xl);
   width: 103px;
   height: 103px;
   object-fit: cover;
 }
 .my-logo-1 {
-  top: 117px;
-  left: 0;
-  width: 139px;
+  top: 0;
   height: 29px;
   overflow: hidden;
 }
 .logo,
-.my-logo-1,
-.nav-bar {
+.logo1,
+.my-logo-1 {
   position: absolute;
+  left: 0;
+  width: 139px;
 }
-.logo {
+.logo1 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
+  top: 124px;
+  height: 29px;
+}
+.logo {
   top: 0;
+  height: 153px;
+}
+.check-project-status {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-weight: 500;
+}
+.nav-bar,
+.project,
+.tasks-icon {
+  position: absolute;
   left: 0;
-  width: 139px;
-  height: 146px;
+  height: 24px;
+}
+.tasks-icon {
+  top: 0;
+  width: 24px;
+  object-fit: cover;
+}
+.nav-bar,
+.project {
+  top: 428px;
+  width: 191px;
 }
 .nav-bar {
   top: 34px;
   left: 29px;
   width: 198px;
-  height: 462px;
+  height: 509px;
 }
 .drawer,
 .nav-section {
@@ -477,7 +533,7 @@
   top: 0;
   left: 0;
   width: 270px;
-  height: 839px;
+  height: 725px;
   overflow-y: auto;
   text-align: left;
   font-size: var(--font-size-base);

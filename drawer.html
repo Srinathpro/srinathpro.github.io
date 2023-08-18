@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@400;600&display=swap"
+    />
   </head>
   <body>
     <div class="drawer" data-animate-on-scroll>
@@ -30,12 +34,9 @@
 
             <div class="expertise-portfolio">Expertise | Portfolio</div>
             <div class="sub-menu">
-              <button class="d-modeling">3d Modeling</button>
+              <button class="d-modeling">3D Modeling</button>
               <button class="web-designing">Web Designing</button>
               <button class="graphic-designing">Graphic Designing</button>
-              <button class="social-media-marketing">
-                Social Media Marketing
-              </button>
               <button class="linkedin-growth-scaling">
                 LinkedIn Growth Scaling
               </button>
@@ -50,15 +51,17 @@
 
             <div class="contact-me1">About me</div>
           </button>
-          <button class="logo">
-            <img
-              class="srinath-1-icon"
-              alt=""
-              src="./public/srinath-1@2x.png"
-            />
+          <div class="logo">
+            <img class="srinath-icon" alt="" src="./public/srinath@2x.png" />
 
-            <img class="my-logo-1" alt="" src="./public/my-logo-1.svg" />
-          </button>
+            <button class="logo1">
+              <img class="my-logo-1" alt="" src="./public/my-logo-1.svg" />
+            </button>
+          </div>
+          <div class="project">
+            <div class="check-project-status">Check Project Status</div>
+            <img class="tasks-icon" alt="" src="./public/tasks@2x.png" />
+          </div>
         </div>
       </header>
     </div>
@@ -79,10 +82,10 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+    </script>
   </body>
 </html>
